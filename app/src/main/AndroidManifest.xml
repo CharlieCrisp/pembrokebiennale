@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="uk.co.pembrokemayball.pembrokebiennale">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/icon"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <receiver android:name="uk.co.pembrokemayball.pembrokebiennale.MyNotificationPublisher" />
+        <activity android:name=".Map"
+            android:label="Map"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity android:name=".Committee"
+            android:label="Committee"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity android:name=".Sponsors"
+            android:label="Sponsors"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity android:name=".WhatsOn"
+            android:label="What's On"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity android:name=".TheOrchard" />
+        <activity android:name=".OldLibrary" />
+        <activity android:name=".OldCourt" />
+        <activity android:name=".IvyParlours" />
+        <activity android:name=".IvyCourt" />
+        <activity android:name=".FoundressCourt" />
+        <activity android:name=".MastersGarden" />
+        <activity android:name=".FellowsGarden" />
+        <activity android:name=".NewCourt" />
+        <activity android:name=".RedBuildingsLawn" />
+        <activity android:name=".WrensChapel" />
+        <activity android:name=".General"
+            android:label="General"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
+            android:name=".Home"
+            android:label="Pembroke Biennale"
+            android:theme="@style/AppTheme.NoActionBar"><intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter></activity>
+    </application>
+
+</manifest>

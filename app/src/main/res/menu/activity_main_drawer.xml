@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_menu"
+            android:title="MENU" />
+        <item
+            android:id="@+id/nav_map"
+            android:title="MAP" />
+        <item
+            android:id="@+id/nav_whats_on"
+            android:title="WHAT'S ON" />
+        <item
+            android:id="@+id/nav_food"
+            android:title="FOOD AND DRINKS" />
+        <item
+            android:id="@+id/nav_music"
+            android:title="MUSIC" />
+        <item
+            android:id="@+id/nav_ents"
+            android:title="ENTS" />
+        <item
+            android:id="@+id/nav_gen_info"
+            android:title="GENERAL INFORMATION" />
+        <item
+            android:id="@+id/nav_com"
+            android:title="THE COMMITTEE" />
+        <item
+            android:id="@+id/nav_spon"
+            android:title="OUR SPONORS" />
+    </group>
+
+</menu>

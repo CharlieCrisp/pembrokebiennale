@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="uk.co.pembrokemayball.pembrokebiennale.Home"
+    tools:showIn="@layout/app_bar_home">
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="368dp"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:fillViewport="false"
+        android:scrollbars="none"
+        tools:context="uk.co.pembrokemayball.pembrokebiennale.HomePage"
+        android:layout_marginLeft="0dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginRight="0dp"
+        app:layout_constraintRight_toRightOf="parent">
+
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fillViewport="true">
+
+            <ImageView
+                android:id="@+id/handtop"
+                android:layout_width="224dp"
+                android:layout_height="174dp"
+                android:adjustViewBounds="true"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/hand1" />
+
+            <ImageView
+                android:id="@+id/handbottom"
+                android:layout_width="213dp"
+                android:layout_height="225dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:adjustViewBounds="true"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/geninfo"
+                app:layout_constraintVertical_bias="0.0"
+                app:srcCompat="@drawable/hand2" />
+
+            <TextView
+                android:id="@+id/drink"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="32dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="8dp"
+                android:onClick="openDrinks"
+                android:text="DRINK"
+                android:textColor="@color/colorPrimary"
+                android:textSize="23sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/food" />
+
+            <TextView
+                android:id="@+id/thecom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="32dp"
+                android:layout_marginTop="8dp"
+                android:text="THE COMMITTEE"
+                android:textColor="@color/green"
+                android:onClick="openComm"
+                android:textSize="23sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/geninfo"
+                android:layout_marginStart="32dp" />
+
+            <TextView
+                android:id="@+id/food"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="32dp"
+                android:layout_marginTop="8dp"
+                android:text="FOOD"
+                android:onClick="openFood"
+                android:textColor="@color/colorPrimary"
+                android:textSize="23sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/whatson"
+                android:layout_marginStart="32dp" />
+
+
+            <TextView
+                android:id="@+id/map"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="32dp"
+                android:onClick="openMap"
+                android:text="MAP"
+                android:textColor="@color/green"
+                android:textSize="23sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/handtop"
+                android:layout_marginStart="32dp" />
+
+            <TextView
+                android:id="@+id/geninfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="32dp"
+                android:layout_marginTop="32dp"
+                android:text="GENERAL INFORMATION"
+                android:onClick="openGen"
+                android:textColor="@color/green"
+                android:textSize="23sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ents"
+                android:layout_marginStart="32dp" />
+
+            <TextView
+                android:id="@+id/ourspon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="32dp"
+                android:layout_marginTop="7dp"
+                android:text="OUR SPONSORS"
+                android:onClick="openSpon"
+                android:textColor="@color/green"
+                android:textSize="23sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/thecom"
+                android:layout_marginStart="32dp" />
+
+            <TextView
+                android:id="@+id/music"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="32dp"
+                android:layout_marginTop="8dp"
+                android:text="MUSIC"
+                android:onClick="openMusic"
+                android:textColor="@color/colorPrimary"
+                android:textSize="23sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/drink"
+                android:layout_marginStart="32dp" />
+
+            <TextView
+                android:id="@+id/ents"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="32dp"
+                android:layout_marginTop="8dp"
+                android:text="ENTS"
+                android:onClick="openEnts"
+                android:textColor="@color/colorPrimary"
+                android:textSize="23sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/music"
+                android:layout_marginStart="32dp" />
+
+            <TextView
+                android:id="@+id/whatson"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="32dp"
+                android:layout_marginTop="32dp"
+                android:text="WHAT'S ON"
+                android:textColor="@color/colorPrimary"
+                android:textSize="23sp"
+                android:onClick="openWhatsOn"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/map"
+                android:layout_marginStart="32dp" />
+        </android.support.constraint.ConstraintLayout>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>

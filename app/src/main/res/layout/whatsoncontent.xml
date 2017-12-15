@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="uk.co.pembrokemayball.pembrokebiennale.WhatsOn"
+    tools:showIn="@layout/app_bar_whatson">
+
+    <TextView
+        android:id="@+id/ninepm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="16dp"
+        android:text="9 PM"
+        app:layout_constraintLeft_toLeftOf="@+id/seekBar"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="8dp" />
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        style="@style/Widget.AppCompat.SeekBar.Discrete"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:max="8"
+        android:progress="0"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/ninepm"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp" />
+
+    <TextView
+        android:id="@+id/fiveam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="8dp"
+        android:text="5 AM"
+        app:layout_constraintBottom_toBottomOf="@+id/ninepm"
+        app:layout_constraintRight_toRightOf="@+id/seekBar"
+        app:layout_constraintTop_toTopOf="@+id/ninepm"
+        android:layout_marginEnd="8dp" />
+
+    <TextView
+        android:id="@+id/oneam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="8dp"
+        android:text="1 AM"
+        app:layout_constraintBottom_toBottomOf="@+id/ninepm"
+        app:layout_constraintLeft_toRightOf="@+id/ninepm"
+        app:layout_constraintRight_toLeftOf="@+id/fiveam"
+        app:layout_constraintTop_toTopOf="@+id/ninepm"
+        android:layout_marginEnd="8dp" />
+
+    <TextView
+        android:id="@+id/elevenpm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:text="11 PM"
+        app:layout_constraintBottom_toBottomOf="@+id/ninepm"
+        app:layout_constraintLeft_toRightOf="@+id/ninepm"
+        app:layout_constraintRight_toLeftOf="@+id/oneam"
+        app:layout_constraintTop_toTopOf="@+id/ninepm"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp" />
+
+    <TextView
+        android:id="@+id/threeam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:text="3 AM"
+        app:layout_constraintBottom_toBottomOf="@+id/ninepm"
+        app:layout_constraintLeft_toRightOf="@+id/oneam"
+        app:layout_constraintRight_toLeftOf="@+id/fiveam"
+        app:layout_constraintTop_toTopOf="@+id/ninepm"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp" />
+
+    <ImageView
+        android:id="@+id/bird"
+        android:layout_width="151dp"
+        android:layout_height="86dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:srcCompat="@drawable/bird_small" />
+
+    <Spinner
+        android:id="@+id/what_spinner"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="@+id/seekBar"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="@+id/seekBar"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/seekBar" />
+
+    <ListView
+        android:id="@+id/listwhaton"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="0dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/bird"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/what_spinner"
+        app:layout_constraintVertical_bias="1.0" />
+
+</android.support.constraint.ConstraintLayout>
